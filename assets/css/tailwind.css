@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 96%;
+    --foreground: 0 0% 3.9%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    /* --background: 240 6% 10%; */
+    /* --background: 222 46% 11%; */
+    --background: 240 6% 10%;
+    --foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  body {
+    @apply dark:text-white text-black bg-background;
+  }
+}
+
+@layer components {
+  .main-header {
+    @apply text-center text-3xl md:text-5xl;
+  }
+  [fade-scroll] {
+    transition: opacity 1.5s cubic-bezier(0.87, 0, 0.13, 1),
+      transform 1.5s cubic-bezier(0.87, 0, 0.13, 1) !important;
+    @apply opacity-0 relative translate-y-16;
+  }
+  .three-dots {
+    @apply overflow-hidden text-ellipsis whitespace-nowrap;
+  }
+  /* body::-webkit-scrollbar {
+    @apply w-2 bg-main;
+  }
+  body::-webkit-scrollbar-thumb {
+    @apply bg-main-foreground rounded-xl;
+  }
+  body::-webkit-scrollbar-track {
+    @apply bg-main;
+  } */
+}

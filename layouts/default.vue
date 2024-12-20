@@ -1,0 +1,4 @@
+<template>
+  <AppScrollToTopBtn />
+  <slot />
+</template>

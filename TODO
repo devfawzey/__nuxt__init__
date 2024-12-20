@@ -1,0 +1,27 @@
+
+Todo:
+  ☐ install important modules
+    ☐ npx nuxi@latest module add ui
+    ☐ npx nuxi@latest module add pinia
+    ☐ npx nuxi@latest module add google-fonts
+    ☐ npx nuxi@latest module add vueuse
+    ☐ npx nuxi@latest module add image
+    ☐ one line install
+      ☐ npx nuxi@latest module add vueuse && npx nuxi@latest module add google-fonts && npx nuxi@latest module add pinia && npx nuxi@latest module add image && npx nuxi@latest module add ui
+  ☐ optional
+    ☐ npx nuxi@latest module add nuxt-viewport
+    ☐ npm i notivue || modules:["notivue/nuxt"] || css: ['notivue/notification.css','notivue/animations.css']
+    ☐ npm i @formkit/auto-animate || modules:['@formkit/auto-animate/nuxt']
+  ☐ features
+      ☐ icons
+        ☐ npm install @iconify-json/heroicons @iconify-json/mdi
+      ☐ others npm install gsap zod
+      ☐ typescript npm install --save-dev vue-tsc typescript
+
+  /**
+     * @backend '@sidebase/nuxt-auth' && nuxt-auth-utils
+     * @important "@nuxt/ui","@vueuse/nuxt","@pinia/nuxt","@nuxt/image","@nuxtjs/google-fonts"
+     * @optional "nuxt-viewport",'notivue/nuxt','@formkit/auto-animate',
+     * @racent "nuxt-marquee"
+     *  vue-ext version 1.8.27
+     */
